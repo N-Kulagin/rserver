@@ -73,5 +73,109 @@
             "displayName": "",
             "configurePreset": "gcc-release-config"
         }
+    ],
+    "testPresets": [
+        {
+            "name": "clang-debug-test",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "clang-debug-config"
+        },
+        {
+            "name": "clang-release-test",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "clang-release-config"
+        },
+        {
+            "name": "gcc-debug-test",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "gcc-debug-config"
+        },
+        {
+            "name": "gcc-release-test",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "gcc-release-config"
+        }
+    ],
+    "workflowPresets": [
+        {
+            "name": "clang-debug-workflow",
+            "description": "",
+            "displayName": "",
+            "steps": [
+                {
+                    "type": "configure",
+                    "name": "clang-debug-config"
+                },
+                {
+                    "type": "build",
+                    "name": "clang-debug-build"
+                },
+                {
+                    "type": "test",
+                    "name": "clang-debug-test"
+                }
+            ]
+        },
+        {
+            "name": "clang-release-workflow",
+            "description": "",
+            "displayName": "",
+            "steps": [
+                {
+                    "type": "configure",
+                    "name": "clang-release-config"
+                },
+                {
+                    "type": "build",
+                    "name": "clang-release-build"
+                },
+                {
+                    "type": "test",
+                    "name": "clang-release-test"
+                }
+            ]
+        },
+        {
+            "name": "gcc-debug-workflow",
+            "description": "",
+            "displayName": "",
+            "steps": [
+                {
+                    "type": "configure",
+                    "name": "gcc-debug-config"
+                },
+                {
+                    "type": "build",
+                    "name": "gcc-debug-build"
+                },
+                {
+                    "type": "test",
+                    "name": "gcc-debug-test"
+                }
+            ]
+        },
+        {
+            "name": "gcc-release-workflow",
+            "description": "",
+            "displayName": "",
+            "steps": [
+                {
+                    "type": "configure",
+                    "name": "gcc-release-config"
+                },
+                {
+                    "type": "build",
+                    "name": "gcc-release-build"
+                },
+                {
+                    "type": "test",
+                    "name": "gcc-release-test"
+                }
+            ]
+        }
     ]
 }
