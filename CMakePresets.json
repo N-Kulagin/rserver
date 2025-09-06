@@ -1,0 +1,77 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "clang-debug-config",
+            "displayName": "clang-debug-config",
+            "description": "Using compilers: C = clang, CXX = clang++",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": "clang",
+                "CMAKE_CXX_COMPILER": "clang++",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "clang-release-config",
+            "description": "",
+            "displayName": "",
+            "inherits": [
+                "clang-debug-config"
+            ],
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        },
+        {
+            "name": "gcc-debug-config",
+            "displayName": "gcc-debug-config",
+            "description": "Using compilers: C = gcc, CXX = g++",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": "gcc",
+                "CMAKE_CXX_COMPILER": "g++",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "gcc-release-config",
+            "description": "",
+            "displayName": "",
+            "inherits": [
+                "gcc-debug-config"
+            ],
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "clang-debug-build",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "clang-debug-config"
+        },
+        {
+            "name": "clang-release-build",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "clang-release-config"
+        },
+        {
+            "name": "gcc-debug-build",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "gcc-debug-config"
+        },
+        {
+            "name": "gcc-release-build",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "gcc-release-config"
+        }
+    ]
+}
