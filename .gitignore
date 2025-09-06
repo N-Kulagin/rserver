@@ -1,5 +1,8 @@
 # Visual Studio Code folder
 .vscode
 
+# Binary directory
+bin
+
 # Build directory
 build

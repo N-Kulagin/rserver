@@ -20,4 +20,6 @@ function(add_gtest_executable target_name)
     gtest_discover_tests(${target_name})
 endfunction()
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${BIN_OUTPUT_DIR}/tests)
+
 add_subdirectory(network)
