@@ -6,3 +6,6 @@ bin
 
 # Build directory
 build
+
+# Doxygen generated documentation
+documentation
