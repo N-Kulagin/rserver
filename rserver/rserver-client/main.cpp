@@ -1,6 +1,6 @@
 #include "network/socket.h"
 
-int main() 
+int main()
 {
     rserver::sayHello();
 }

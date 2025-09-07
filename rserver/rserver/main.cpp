@@ -1,15 +1,16 @@
 /**
  * @file main.cpp
  * @author N. Kulagin (n.kulagin.it@gmail.com)
- * 
+ *
  * @date 2025-09-07
  * @copyright Copyright (c) 2025
  */
 
-#include "network/socket.h"
 #include <CLI/CLI.hpp>
 
-int main(int argc, char** argv) 
+#include "network/socket.h"
+
+int main(int argc, char** argv)
 {
     CLI::App app{"App description"};
     argv = app.ensure_utf8(argv);

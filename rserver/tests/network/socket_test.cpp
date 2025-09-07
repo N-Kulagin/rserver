@@ -1,9 +1,9 @@
-#include <gtest/gtest.h>
-
 #include "network/socket.h"
 
+#include <gtest/gtest.h>
+
 // Demonstrate some basic assertions.
-TEST(SocketTest, BasicAssertions) 
+TEST(SocketTest, BasicAssertions)
 {
     rserver::sayHello();
     // Expect two strings not to be equal.
