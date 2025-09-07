@@ -4,6 +4,12 @@ project(rserver-admin)
 set(SRCS main.cpp)
 
 add_executable(${PROJECT_NAME} ${SRCS})
-target_link_libraries(${PROJECT_NAME} PRIVATE core)
+target_link_libraries(
+    ${PROJECT_NAME} 
+    PRIVATE 
+    core 
+    ftxui::component
+    ftxui::dom
+    ftxui::screen)
 
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
