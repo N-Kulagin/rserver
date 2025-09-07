@@ -9,3 +9,6 @@ build
 
 # Doxygen generated documentation
 documentation
+
+# CMake copies the commands to root so that VS Code clang-tidy extension can pick it up
+compile_commands.json

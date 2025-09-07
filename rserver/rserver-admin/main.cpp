@@ -8,7 +8,6 @@ int main()
 {
     rserver::sayHello();
 
-    // TODO: add autoformatting
     using namespace ftxui;
 
     Element document = hbox({
