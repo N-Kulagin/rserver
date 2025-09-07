@@ -12,3 +12,4 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${BIN_OUTPUT_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${BIN_OUTPUT_DIR}/lib)
 
 add_subdirectory(rserver)
+add_subdirectory(CLI11)
