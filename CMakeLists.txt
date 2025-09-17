@@ -7,6 +7,8 @@ string(TOLOWER ${CMAKE_BUILD_TYPE} BUILD_TYPE)
 
 set(BIN_OUTPUT_DIR ${CMAKE_SOURCE_DIR}/bin/${BUILD_TYPE})
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 # Used for clang-tidy because CMake won't bother to add includes from header-only library into a compile_commands.json
 include_directories(CLI11/include)
 
