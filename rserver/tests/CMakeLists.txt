@@ -17,9 +17,8 @@ include(GoogleTest)
 function(add_gtest_executable target_name)
     add_executable(${target_name} ${ARGN})
     target_link_libraries(${target_name} PRIVATE gtest_main)
+    set_target_properties(${target_name} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${BIN_OUTPUT_DIR}/tests)
     gtest_discover_tests(${target_name})
 endfunction()
-
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${BIN_OUTPUT_DIR}/tests)
 
 add_subdirectory(network)

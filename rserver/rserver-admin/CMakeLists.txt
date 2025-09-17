@@ -13,3 +13,5 @@ target_link_libraries(
     ftxui::screen)
 
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
+
+set_target_properties(${PROJECT_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${BIN_OUTPUT_DIR})
