@@ -1,3 +1,4 @@
-namespace rserver {
-void sayHello();
+namespace rserver
+{
+    void sayHello();
 }
