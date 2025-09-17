@@ -7,6 +7,7 @@
  */
 
 #include <CLI/CLI.hpp>
+#include <iostream>
 
 #include "network/socket.h"
 
