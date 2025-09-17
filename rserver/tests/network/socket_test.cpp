@@ -3,7 +3,7 @@
 #include <gtest/gtest.h>
 
 // Demonstrate some basic assertions.
-TEST(SocketTest, BasicAssertions)
+TEST(SocketTest, BasicAssertions) // NOLINT
 {
     rserver::sayHello();
     // Expect two strings not to be equal.

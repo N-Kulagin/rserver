@@ -23,9 +23,10 @@ int main(int argc, char** argv)
     std::string filename = "default";
     app.add_option("-f,--file", filename, "A help string");
 
+    double rup = 2.5;
     int x;
     int y = 100;
-    double z = 2.5;
+    double z = rup;
     double ww = 2.5;
     double www = 3.5;
     double wwww = 4.5;
@@ -35,8 +36,11 @@ int main(int argc, char** argv)
     int zz = 3.5;
     int zzzz = 3.4;
 
-    if (true)
-        return 1;
+    bool my_bool;
+    std::cin >> my_bool;
+
+    if (my_bool)
+        std::cout << 2;
     else
         return 2;
 
